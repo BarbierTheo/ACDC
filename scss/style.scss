@@ -34,7 +34,22 @@ body {
 // *************************
 //           NAVBAR       
 // *************************
+nav{
+    font-family: thedark;
+    font-size: 1.5rem;
+    .navbar-brand{
+        font-size: 3rem;
+        color: white;
+    }
 
+    .nav-link{
+        color: red;
+    }
+    
+    .flash{
+        font-size: 2.8rem;
+    }
+}
 
 
 
@@ -57,6 +72,14 @@ body {
 .title{
     color: white;
     margin-top: 2rem;
+    font-family: thedark;
+    font-size: 2rem;
+}
+
+.flash{
+    color: #7b002c ;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 // *************************
@@ -67,6 +90,15 @@ body {
 .members{
     max-width: 95%;
     color: white;
+
+    figcaption{
+        font-weight: 700;
+    }
+
+    figure{
+        text-align: center;
+    }
+
 }
 
 
@@ -74,9 +106,21 @@ body {
 //       DISCOGRAPHIE       
 // *************************
 
+.card-body{
+    a{
+        font-family: rocknroll;
+        font-size: 1.5rem;
+    }
+}
 
+.card{
+    -webkit-box-shadow: 5px 3px 13px 8px rgba(0,0,0,0.78); 
+box-shadow: 5px 3px 13px 8px rgba(0,0,0,0.78);
+}
 
-
+.card-title{
+    font-weight: 700;
+}
 
 // *************************
 //           DATES       
@@ -97,4 +141,17 @@ body {
 .contact{
     max-width: 60%;
     margin: 0 auto;
+
+
+    input::placeholder, textarea::placeholder{
+        font-family: hard-rock;
+        font-size: 1.5rem;
+        color: red;
+      }
+
+      button{
+        font-family: rocknroll;
+        font-size: 1.7rem;
+      }
+      
 }

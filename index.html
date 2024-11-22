@@ -8,6 +8,12 @@
     <title>AC/DC</title>
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -17,304 +23,293 @@
     <!--           NAVBAR          -->
     <!-- ************************* -->
 
-    <nav class="navbar navbar-expand-lg bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ACDC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg p-0 bg-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">AC<span class="flash">⚡︎</span>DC</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href=".">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#members">Membres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#discographie">Discographie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#agenda">Agenda des concerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- ************************* -->
+        <!--           CAROUSEL        -->
+        <!-- ************************* -->
+
+        <div id="carouselacdc" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ac-dc-1.png" class="d-block" alt="PWR-UP-acdc">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ac-dc-2.png" class="d-block" alt="logo-acdc">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ac-dc-3.png" class="d-block" alt="brian-johnson-angus-young">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselacdc" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Membres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Discographie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Agenda des concerts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselacdc" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- ************************* -->
+        <!--        MEMBRES             -->
+        <!-- ************************* -->
+        <div class="members" id="members">
+            <p class="title text-center">AC<span class="flash">⚡︎</span>DC -- Les Membres du Groupe --</p>
+
+            <div class="memberlist row justify-content-center ">
+                <figure class="figure col-lg-2 col-6">
+                    <img src="./img/brian-johnson.png" class="figure-img img-fluid border border-4" alt="brian-johnson">
+                    <figcaption class="text-center">Brian Johnson (Chant)</figcaption>
+                </figure>
+                <figure class="figure col-lg-2 col-6">
+                    <img src="./img/angus-young.png" class="figure-img img-fluid border border-4" alt="angus-young">
+                    <figcaption class="text-center">Angus Young (Guitare Solo)</figcaption>
+                </figure>
+                <figure class="figure col-lg-2 col-6">
+                    <img src="./img/steve-young.png" class="figure-img img-fluid border border-4" alt="steve-young">
+                    <figcaption class="text-center">Steve Young (Guitare)</figcaption>
+                </figure>
+                <figure class="figure col-lg-2 col-6">
+                    <img src="./img/cliff-williams.png" class="figure-img img-fluid border border-4"
+                        alt="cliff-williams">
+                    <figcaption class="text-center">Cliff Williams (Basse)</figcaption>
+                </figure>
+                <figure class="figure col-lg-2 col-6">
+                    <img src="./img/chris-slade.png" class="figure-img img-fluid border border-4" alt="chris-slade">
+                    <figcaption class="text-center">Chris Slade (Batterie)</figcaption>
+                </figure>
             </div>
         </div>
-    </nav>
 
-    <!-- ************************* -->
-    <!--           CAROUSEL        -->
-    <!-- ************************* -->
+        <!-- ************************* -->
+        <!--        DISCOGRAPHIE       -->
+        <!-- ************************* -->
+        <div class="discographie container" id="discographie">
+            <p class="title text-center"> AC<span class="flash">⚡︎</span>DC -- la Discographie --</p>
+            <div class="row justify-content-around gap-2">
 
-    <div id="carouselacdc" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselacdc" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/High-voltage-1975.jpg" class="card-img m-1 " alt="cover-high-voltage">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1975 : High Voltage</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Highway-to-hell-1979.jpg" class="card-img m-1"
+                        alt="cover-highway-to-hell">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1979 : Highway to Hell</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Back-in-black-1980.jpg" class="card-img m-1" alt="cover-back-in-black">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1980 : Back in Black</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Who-made-who-1986.jpg" class="card-img m-1" alt="cover-who-made-who">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1986 : Who made Who</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Blow-up-your-video-1988.jpg" class="card-img m-1"
+                        alt="cover-blow-up-your-video">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1988 : Blow up your video</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Razor-edge-1990.jpg" class="card-img m-1" alt="cover-razor-edge">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1990 : Razor's Edge</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Ballbreaker-1995.jpg" class="card-img m-1" alt="cover-ballbreaker">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">1995 : Ballbreaker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Stiff-upper-lip-2000.jpg" class="card-img m-1"
+                        alt="cover-stiff-upper-lip">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">2000 : Stiff upper lip</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
+                    <img src="./img/Discographie/Black-ice-2008.jpg" class="card-img m-1" alt="cover-black-ice">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger text-center">2008 : Black Ice</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
+                            cumque, commodi provident explicabo laborum magnam</p>
+                        <a href="#" class="btn btn-danger">Lire plus</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/ac-dc-1.png" class="d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/ac-dc-2.png" class="d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/ac-dc-3.png" class="d-block" alt="...">
-            </div>
+
+        <!-- ************************* -->
+        <!--           DATES           -->
+        <!-- ************************* -->
+
+        <div class="dates" id="agenda">
+            <p class="title text-center"> AC<span class="flash">⚡︎</span>DC -- les Dates des Concerts --</p>
+            <table class="table table-dark tableau table-hover">
+                <thead>
+                    <tr class="table-dark table-bordered border-danger">
+                        <th scope="col datetitle">Date</th>
+                        <th scope="col">Heure</th>
+                        <th scope="col">Salle</th>
+                        <th scope="col">Ville</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08/06/2000</td>
+                        <td>21:00</td>
+                        <td>Stade deFrance</td>
+                        <td>Paris</td>
+                    </tr>
+                    <tr>
+                        <td>12/05/2002</td>
+                        <td>21:00</td>
+                        <td>Esplanade</td>
+                        <td>Singapour</td>
+                    </tr>
+                    <tr>
+                        <td>18/09/2009</td>
+                        <td>20:30</td>
+                        <td>Opera</td>
+                        <td>Sydney</td>
+                    </tr>
+                    <tr>
+                        <td>12/09/2021</td>
+                        <td>20:30</td>
+                        <td>Massey Hall</td>
+                        <td>Toronto</td>
+                    </tr>
+                    <tr>
+                        <td>12/09/2022</td>
+                        <td>20:30</td>
+                        <td>Madison Square Garden</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>08/06/2023</td>
+                        <td>21:30</td>
+                        <td>Stade deFrance</td>
+                        <td>Paris</td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselacdc" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselacdc" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- ************************* -->
-    <!--        MEMBRES             -->
-    <!-- ************************* -->
-    <div class="members">
-        <p class="title text-center">ACDC -- Les Membres du Groupe --</p>
-
-        <div class="memberlist row justify-content-center">
-            <figure class="figure col-lg-2 col-6">
-                <img src="./img/brian-johnson.png" class="figure-img img-fluid border border-4" alt="brian-johnson">
-                <figcaption class="text-center">Brian Johnson (Chant)</figcaption>
-            </figure>
-            <figure class="figure col-lg-2 col-6">
-                <img src="./img/angus-young.png" class="figure-img img-fluid border border-4" alt="angus-young">
-                <figcaption class="text-center">Angus Young (Guitare Solo)</figcaption>
-            </figure>
-            <figure class="figure col-lg-2 col-6">
-                <img src="./img/steve-young.png" class="figure-img img-fluid border border-4" alt="steve-young">
-                <figcaption class="text-center">Steve Young (Guitare)</figcaption>
-            </figure>
-            <figure class="figure col-lg-2 col-6">
-                <img src="./img/cliff-williams.png" class="figure-img img-fluid border border-4" alt="cliff-williams">
-                <figcaption class="text-center">Cliff Williams (Basse)</figcaption>
-            </figure>
-            <figure class="figure col-lg-2 col-6">
-                <img src="./img/chris-slade.png" class="figure-img img-fluid border border-4" alt="chris-slade">
-                <figcaption class="text-center">Chris Slade (Batterie)</figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <!-- ************************* -->
-    <!--        DISCOGRAPHIE       -->
-    <!-- ************************* -->
-    <div class="discographie container">
-        <p class="title text-center"> ACDC -- la Discographie --</p>
-        <div class="row justify-content-around gap-2">
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/High-voltage-1975.jpg" class="card-img m-1" alt="cover-high-voltage">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1975 : High Voltage</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Highway-to-hell-1979.jpg" class="card-img m-1" alt="cover-highway-to-hell">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1979 : Highway to Hell</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Back-in-black-1980.jpg" class="card-img m-1" alt="cover-back-in-black">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1980 : Back in Black</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Who-made-who-1986.jpg" class="card-img m-1" alt="cover-who-made-who">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1986 : Who made Who</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Blow-up-your-video-1988.jpg" class="card-img m-1"
-                    alt="cover-blow-up-your-video">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1988 : Blow up your video</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Razor-edge-1990.jpg" class="card-img m-1" alt="cover-razor-edge">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1990 : Razor's Edge</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Ballbreaker-1995.jpg" class="card-img m-1" alt="cover-ballbreaker">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">1995 : Ballbreaker</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Stiff-upper-lip-2000.jpg" class="card-img m-1" alt="cover-stiff-upper-lip">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">2000 : Stiff upper lip</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-md-6 col-12" style="max-width: 23rem;">
-                <img src="./img/Discographie/Black-ice-2008.jpg" class="card-img m-1" alt="cover-black-ice">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-center">2008 : Black Ice</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima quod
-                        cumque, commodi provident explicabo laborum magnam</p>
-                    <a href="#" class="btn btn-danger">Lire plus</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- ************************* -->
-    <!--           DATES           -->
-    <!-- ************************* -->
-
-    <div class="dates">
-        <p class="title text-center"> ACDC -- les Dates des Concerts --</p>
-        <table class="table table-dark tableau">
-            <thead>
-                <tr class="table-dark table-bordered border-danger">
-                    <th scope="col datetitle">Date</th>
-                    <th scope="col">Heure</th>
-                    <th scope="col">Salle</th>
-                    <th scope="col">Ville</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>08/06/2000</td>
-                    <td>21:00</td>
-                    <td>Stade deFrance</td>
-                    <td>Paris</td>
-                </tr>
-                <tr>
-                    <td>12/05/2002</td>
-                    <td>21:00</td>
-                    <td>Esplanade</td>
-                    <td>Singapour</td>
-                </tr>
-                <tr>
-                    <td>18/09/2009</td>
-                    <td>20:30</td>
-                    <td>Opera</td>
-                    <td>Sydney</td>
-                </tr>
-                <tr>
-                    <td>12/09/2021</td>
-                    <td>20:30</td>
-                    <td>Massey Hall</td>
-                    <td>Toronto</td>
-                </tr>
-                <tr>
-                    <td>12/09/2022</td>
-                    <td>20:30</td>
-                    <td>Madison Square Garden</td>
-                    <td>New York</td>
-                </tr>
-                <tr>
-                    <td>08/06/2023</td>
-                    <td>21:30</td>
-                    <td>Stade deFrance</td>
-                    <td>Paris</td>
-                </tr>
-
-            </tbody>
-        </table>
-
 
         <!-- ************************* -->
         <!--           CONTACT         -->
         <!-- ************************* -->
-        <div class="contact">
-            <p class="title text-center">ACDC -- Contact --</p>
+        <div class="contact mb-5" id="contact">
+            <p class="title text-center">AC<span class="flash">⚡︎</span>DC -- Contact --</p>
 
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-lg-6 col-md-6 col-6 position-relative">
                     <input type="text" class="form-control" id="validationTooltip01" placeholder="Nom" required>
-                    <div class="valid-tooltip">
-                        Looks good!
-                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-6 position-relative">
                     <input type="text" class="form-control" id="validationTooltip02" placeholder="Prénom">
-                    <div class="valid-tooltip">
-                        Looks good!
-                    </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 position-relative">
                     <div class="input-group has-validation">
-                        <input type="email" class="form-control" id="validationTooltipUsername"
-                            aria-describedby="validationTooltipUsernamePrepend" placeholder="Adresse email" required>
-                        <div class="invalid-tooltip">
-                            Please choose a unique and valid username.
-                        </div>
+                        <input type="email" class="form-control" id="validationTooltipMail" placeholder="Adresse email"
+                            required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <textarea class="form-control" id="validationTextarea" placeholder="Votre message"
                         required></textarea>
-                    <div class="invalid-feedback">
-                        Please enter a message in the textarea.
-                    </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col-lg-6 col-md-6 col-6">
-                        <button class="btn btn-danger" type="submit">Envoyer</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-6">
-                        <button class="btn btn-danger" type="reset">Annuler</button>
-                    </div>
+                <div class="d-flex justify-content-center gap-4">
+                    <button class="btn btn-danger" type="submit">Envoyer</button>
+                    <button class="btn btn-danger" type="reset">Annuler</button>
                 </div>
             </form>
         </div>
+    </div>
 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

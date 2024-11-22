@@ -19,6 +19,21 @@ body {
   background: repeating-linear-gradient(120deg, black, black 800px, red 800px, red 1600px);
 }
 
+nav {
+  font-family: thedark;
+  font-size: 1.5rem;
+}
+nav .navbar-brand {
+  font-size: 3rem;
+  color: white;
+}
+nav .nav-link {
+  color: red;
+}
+nav .flash {
+  font-size: 2.8rem;
+}
+
 .carousel {
   margin: 2rem;
 }
@@ -30,11 +45,38 @@ body {
 .title {
   color: white;
   margin-top: 2rem;
+  font-family: thedark;
+  font-size: 2rem;
+}
+
+.flash {
+  color: #7b002c;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .members {
   max-width: 95%;
   color: white;
+}
+.members figcaption {
+  font-weight: 700;
+}
+.members figure {
+  text-align: center;
+}
+
+.card-body a {
+  font-family: rocknroll;
+  font-size: 1.5rem;
+}
+
+.card {
+  box-shadow: 5px 3px 13px 8px rgba(0, 0, 0, 0.78);
+}
+
+.card-title {
+  font-weight: 700;
 }
 
 .tableau {
@@ -45,4 +87,18 @@ body {
 .contact {
   max-width: 60%;
   margin: 0 auto;
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  font-family: hard-rock;
+  font-size: 1.5rem;
+  color: red;
+}
+.contact input::placeholder, .contact textarea::placeholder {
+  font-family: hard-rock;
+  font-size: 1.5rem;
+  color: red;
+}
+.contact button {
+  font-family: rocknroll;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=style.css.map */
