@@ -1,0 +1,100 @@
+@font-face {
+    font-family: hard-rock;
+    src: url(../fonts/HARD_ROCK.ttf);
+}
+
+@font-face {
+    font-family: rocknroll;
+    src: url(../fonts/rocknroll_typo_crazy.ttf);
+}
+
+@font-face {
+    font-family: thedark;
+    src: url(../fonts/TheDark.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    // background dégradé
+    background: repeating-linear-gradient(120deg,
+            black,
+            black 800px,
+            red 800px,
+            red 1600px);
+}
+
+
+
+// *************************
+//           NAVBAR       
+// *************************
+
+
+
+
+// *************************
+//           CAROUSEL       
+// *************************
+.carousel {
+
+    margin: 2rem;
+    .carousel-inner {
+
+        img {
+            margin: auto;
+            max-width: 100%;
+        }
+
+    }
+}
+
+.title{
+    color: white;
+    margin-top: 2rem;
+}
+
+// *************************
+//           MEMBRES       
+// *************************
+
+
+.members{
+    max-width: 95%;
+    color: white;
+}
+
+
+// *************************
+//       DISCOGRAPHIE       
+// *************************
+
+
+
+
+
+// *************************
+//           DATES       
+// *************************
+
+.tableau{
+    margin: 2rem auto;
+    max-width: 90%;
+}
+
+
+
+
+// *************************
+//          CONTACT       
+// *************************
+
+.contact{
+    max-width: 60%;
+    margin: 0 auto;
+}
